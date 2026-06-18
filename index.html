@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abyssal Labs — Deep Ocean Exploration</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/showcase site/style.CSS">
+</head>
+<body>
+
+<canvas id="bio-canvas"></canvas>
+
+<nav>
+  <div class="nav-logo">Abyssal Labs</div>
+  <ul class="nav-links">
+    <li><a href="#missions">Missions</a></li>
+    <li><a href="#tech">Technology</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#cta">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <p class="hero-eyebrow"><span></span>Deep Ocean Research Studio</p>
+  <h1>Where light<br>ends, <em>we begin.</em></h1>
+  <p class="hero-sub">Abyssal Labs deploys next-generation submersibles and sensor networks to map the last unexplored frontier on Earth — the ocean below 3,000 metres.</p>
+  <div class="btn-group">
+    <a href="#missions" class="btn-primary">View Missions</a>
+    <a href="#tech" class="btn-ghost">Our Technology</a>
+  </div>
+
+  <div class="depth-bar" aria-hidden="true">
+    <span class="depth-label">Current depth</span>
+    <div class="depth-line"></div>
+    <span class="depth-num" id="depth-counter">0 m</span>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="stat-card">
+    <div class="stat-num">11<sup>km</sup></div>
+    <div class="stat-desc">Maximum dive depth reached</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">247</div>
+    <div class="stat-desc">New species catalogued</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">83<sup>%</sup></div>
+    <div class="stat-desc">Of ocean floor unmapped</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">14</div>
+    <div class="stat-desc">Active submersibles deployed</div>
+  </div>
+</section>
+
+<section id="missions">
+  <div class="section-header">
+    <span class="section-tag">Field Work</span>
+    <h2>Active Missions</h2>
+  </div>
+  <div class="mission-grid">
+    <div class="mission-card">
+      <div class="mission-depth">— 6,200 m · Pacific Ocean</div>
+      <div class="mission-title">Project Hadal</div>
+      <p class="mission-body">Mapping the hadal zone of the Mariana Trench using autonomous swarm vehicles. The mission is producing the highest-resolution topographic survey of any deep-sea trench to date.</p>
+    </div>
+    <div class="mission-card">
+      <div class="mission-depth">— 3,800 m · Indian Ocean</div>
+      <div class="mission-title">Thermal Vent Survey</div>
+      <p class="mission-body">Cataloguing hydrothermal vent ecosystems along the Carlsberg Ridge. Three new species of extremophile organisms have been collected for analysis since 2025.</p>
+    </div>
+    <div class="mission-card">
+      <div class="mission-depth">— 1,200 m · North Atlantic</div>
+      <div class="mission-title">Kelp Cradle</div>
+      <p class="mission-body">Long-term monitoring of cold-water coral reefs off the Norwegian shelf. Sensor arrays log temperature, salinity, and biological density on six-minute cycles year-round.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="tech-inner">
+    <div class="section-header">
+      <span class="section-tag">Engineering</span>
+      <h2>Built for pressure</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-visual" aria-hidden="true">
+        <div class="sonar-ring"></div>
+        <div class="sonar-ring"></div>
+        <div class="sonar-ring"></div>
+        <div class="sonar-ring"></div>
+        <div class="sonar-dot"></div>
+      </div>
+      <ul class="tech-list">
+        <li class="tech-item">
+          <div class="tech-icon"></div>
+          <div>
+            <div class="tech-name">Pressure-adaptive hull</div>
+            <div class="tech-desc">Ceramic-composite shells that flex rather than resist, distributing stress evenly at depths exceeding 10 km.</div>
+          </div>
+        </li>
+        <li class="tech-item">
+          <div class="tech-icon"></div>
+          <div>
+            <div class="tech-name">Acoustic mesh network</div>
+            <div class="tech-desc">Multi-node sonar arrays enable real-time data relay across a 40 km swarm diameter with sub-second latency.</div>
+          </div>
+        </li>
+        <li class="tech-item">
+          <div class="tech-icon"></div>
+          <div>
+            <div class="tech-name">Bio-passive lighting</div>
+            <div class="tech-desc">Amber-spectrum LEDs tuned to minimise fauna disturbance, paired with low-light sensors capable of 4K capture in near-total darkness.</div>
+          </div>
+        </li>
+        <li class="tech-item">
+          <div class="tech-icon"></div>
+          <div>
+            <div class="tech-name">72-hour endurance cells</div>
+            <div class="tech-desc">Lithium-sulfur battery packs with redundant thermal management, delivering sustained operation without ascent for data transfer.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="section-header">
+    <span class="section-tag">People</span>
+    <h2>The crew</h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-avatar">M</div>
+      <div class="team-name">Dr. Mara Solís</div>
+      <div class="team-role">Director, Marine Biology</div>
+      <p class="team-bio">Former Scripps researcher. Fifteen years studying chemosynthetic ecosystems. Led the first live retrieval of a giant isopod from hadal depth.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">K</div>
+      <div class="team-name">Kenji Okafor</div>
+      <div class="team-role">Lead Systems Engineer</div>
+      <p class="team-bio">Designed the pressure hull geometry now used across all Abyssal vehicles. Holds four patents in subsea robotics and buoyancy control.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">I</div>
+      <div class="team-name">Irina Vasquez</div>
+      <div class="team-role">Acoustic Sensor Lead</div>
+      <p class="team-bio">Pioneered multi-phase sonar mesh networking in her doctoral work at WHOI. Responsible for all swarm communication architecture.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">T</div>
+      <div class="team-name">Dr. Theo Andriessen</div>
+      <div class="team-role">Mission Commander</div>
+      <p class="team-bio">Retired naval captain turned oceanographer. Has personally piloted crewed submersibles on 38 dives below 4,000 metres.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <h2>Go deeper with us</h2>
+  <p>Collaborating with institutions, agencies, and independent scientists who share our commitment to ocean knowledge.</p>
+  <a href="mailto:hello@abyssallabs.io" class="btn-primary">Get in touch</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Abyssal Labs</div>
+  <span class="footer-copy">© 2026 — All depths reserved</span>
+</footer>
+
+<script src="/showcase site/script.js"></script>
+</body>
+</html>
